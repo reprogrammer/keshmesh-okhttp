@@ -41,6 +41,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import edu.illinois.keshmesh.annotations.EntryPoint;
+
 /**
  * A cache that uses a bounded amount of space on a filesystem. Each cache
  * entry has a string key and a fixed number of values. Each key must match
@@ -196,6 +198,7 @@ public final class DiskLruCache implements Closeable {
    * @param maxSize the maximum number of bytes this cache should use to store
    * @throws IOException if reading or writing the cache directory fails
    */
+  @EntryPoint
   public static DiskLruCache open(File directory, int appVersion, int valueCount, long maxSize)
       throws IOException {
     if (maxSize <= 0) {

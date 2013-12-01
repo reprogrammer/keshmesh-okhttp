@@ -18,6 +18,9 @@ package com.squareup.okhttp.internal.spdy;
 
 import com.squareup.okhttp.internal.NamedRunnable;
 import com.squareup.okhttp.internal.Util;
+
+import edu.illinois.keshmesh.annotations.EntryPoint;
+
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
@@ -161,6 +164,7 @@ public final class SpdyConnection implements Closeable {
    * @param in true to create an input stream that the remote peer can use to
    * send data to us. Corresponds to {@code FLAG_UNIDIRECTIONAL}.
    */
+  @EntryPoint
   public SpdyStream newStream(List<String> requestHeaders, boolean out, boolean in)
       throws IOException {
     int flags = (out ? 0 : FLAG_FIN) | (in ? 0 : FLAG_UNIDIRECTIONAL);

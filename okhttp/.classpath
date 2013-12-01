@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src/test/java"/>
+	<classpathentry including="**/*.java" kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/npn/npn-boot/8.1.2.v20120308/npn-boot-8.1.2.v20120308.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/4.10/junit-4.10.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/bouncycastle/bcprov-jdk15on/1.47/bcprov-jdk15on-1.47.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/google/mockwebserver/mockwebserver/20130122/mockwebserver-20130122.jar"/>
+	<classpathentry kind="lib" path="lib/annotations.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
